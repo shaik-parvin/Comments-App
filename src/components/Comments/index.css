@@ -1,0 +1,123 @@
+/* Write your CSS here */
+.bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 60px;
+  font-family: 'Roboto';
+}
+
+.heading {
+  color: #1e293b;
+  font-size: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.first-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.name {
+  width: 300px;
+  padding: 5px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: 2px #cbd2d9 solid;
+  outline: none;
+}
+
+.comment {
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+  font-family: 'Roboto';
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: 2px #cbd2d9 solid;
+  outline: none;
+}
+
+.button {
+  background-color: #0284c7;
+  border: none;
+  border-radius: 5px;
+  color: #dee0e3;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+  width: 100px;
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+}
+
+.comments-count {
+  color: #334155;
+  font-size: 15px;
+}
+
+hr {
+  background-color: #cbd2d9;
+  width: 90vw;
+}
+.number-count {
+  color: #ffffff;
+  padding: 6px;
+  background-color: #0284c7;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.comment-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 0px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-container {
+    padding: 40px;
+  }
+
+  hr {
+    width: 80vw;
+  }
+
+  .card {
+    flex-wrap: wrap;
+  }
+
+  .first-card {
+    order: 1;
+  }
+  .image {
+    order: 0;
+    width: 300px;
+    height: 200px;
+  }
+}
